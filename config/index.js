@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{     //将www.exaple.com印射为/apis
-        target:'https://www.exaple.com',     //跨域地址
+        target:'http://runner.vipgz1.idcfengye.com',     //跨域地址
         changeOrigin:true,       //是否跨域
         secure:false,        //是否使用https
         pathRewrite: {
@@ -52,7 +52,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
